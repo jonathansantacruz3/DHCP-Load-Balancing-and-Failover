@@ -17,3 +17,5 @@ This tutorial outlines the implementation of a failover configuration and load b
 <h2>Configuration Steps</h2>
 
 The infrastructure set here is based on two servers running Windows Serer 2022 with the DHCP role installed on them. The client PC, StarLord, is running Windows 11 Pro and receives its data from DHCP 1. DHCP 1 has an address pool named ProjectLAN and has a range from 192.168.0.25 through 192.168.0.50. 
+
+DHCP 2 also has the role of a DHCP server with a static IP address. It has no specific scope assigned to it because it will serve as a failover to DHCP 1. To configure the failover onto DHCP 2 I need to head over to the DHCP tab in Server Manager and  
