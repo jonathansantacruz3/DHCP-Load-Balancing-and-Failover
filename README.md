@@ -25,10 +25,10 @@ DHCP 2 also has the role of a DHCP server with a static IP address. It has no sp
 
 
 <h3>Wizard Configuration</h3>
-In the wizard, I will click "Next", and name the partner server's IP and click on "Add server" to add the hostname that will take over if the primary server fails. After confirming the IP and hostname, I will click on next and proceed to the next window. Here in the "Mode" section, I will choose the "Hot Standby" otion from the drop down menu. This means the added server will act as the primary if the primary fails to answer queries. 
+In the wizard, I will click "Next", and name the partner server's IP and click on "Add server" to add the hostname that will take over if the primary server fails. After confirming the IP and hostname, I will click on next and proceed to the next window. Here in the "Mode" section, I will choose the "Hot Standby" option from the drop down menu. This means the added server will act as the primary if the primary fails to answer queries. I can also choose to set it up as a load balancer where the servers will share the load of queries allowing the system to be optimized. I can change the amount of loads one server can take over the other or have them share evenly. I can also choose to authenticate the failover relationship by requiring a shared secret passcode. 
 
-![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-
-Failover/assets/151465848/c9ae1d5e-fa38-4cc2-b1d3-458b0162c10b)
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/e5a5de65-f94d-493a-8ebb-7e1deacf28f2)
+
 
 ![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/ae307870-382c-4394-8073-d8f00ea800a8)
 
