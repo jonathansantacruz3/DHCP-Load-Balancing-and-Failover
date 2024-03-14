@@ -35,3 +35,9 @@ In the wizard, I will click "Next", and name the partner server's IP and click o
 
 ![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/027593a7-becf-46b6-a471-bf9803535ef6)
 
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/951438e7-75b6-4a39-bb9b-9e9257643314)
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/31a18b0a-232e-44cc-baf4-6d0924e2ded8)
+
+I can right-click the scope 
+
