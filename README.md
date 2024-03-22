@@ -39,5 +39,23 @@ In the wizard, I will click "Next", and name the partner server's IP and click o
 
 ![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/31a18b0a-232e-44cc-baf4-6d0924e2ded8)
 
-I can right-click the scope 
+I can right-click the scope of "ProjectLAN" and view its "Properties". Under the "Failover" tab I can see the configuration is set and I can move on to the partner server to verify it is a functional failover system. 
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/2e37ece7-59d7-4c3d-abaa-9be57c029c07)
+
+<h3>Server Side Verification</h3>\
+
+The way I will demonstrate that DNS-THOR will take over as the primary DHCP server is I will disable DNS-IRONMAN's network adapter to take it offline. This will cause DNS-THOR to assume full DHCP responsibilties. In the following image, you can see that my client PC is receiving information from DNS-IRONMAN.
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/fc884a7b-ec0d-49b6-87a4-1342430854d7)
+
+Once I take DNS-IRONMAN offline, I need to release any previous adapter settings on the client PC by typing "ipconfig /release" in the command line with elevated permissions. To make sure I receive different adapter settings form the new DHCP server I Typed in "ipconfig /renew".
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/98d7effa-2b09-4dbd-aa8b-71a765414709)
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/00f5766d-5784-4f89-a911-19a1f62b4351)
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/52c59e64-1a7c-472a-b744-790cd6f297e4)
+
+![image](https://github.com/jonathansantacruz3/DHCP-Load-Balancing-and-Failover/assets/151465848/f8dcfe2f-b81b-4bb0-9e8d-0f21cf68d735)
 
